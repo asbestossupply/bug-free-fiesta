@@ -1,0 +1,22 @@
+{
+  "name": "forter-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Noah Blumenthal <noah.blumenthal@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "arg": "^5.0.2",
+    "express": "^4.18.2",
+    "node-fetch": "2"
+  },
+  "scripts": {
+    "server": "node server.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "nock": "^13.2.9",
+    "supertest": "^6.3.3"
+  }
+}
