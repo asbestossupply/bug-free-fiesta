@@ -18,7 +18,8 @@ app.post('/', async (req, res) => {
     res.status(200).json({ success: true, result: country });
   } catch (err) {
     console.log(err);
-    res.status(500).json({ success: false, error: err || 'error fetching, try again?'})
+    const error = err.toString() || 'error fetching, try again?'
+    res.status(500).json({ success: false, error })
   }
 
 })
