@@ -51,7 +51,7 @@ test('post / ip lookup fails', (done) => {
         .expect(500)
         .expect((res) => {
             expect(res.body.success).toBe(false);
-            expect(res.body.error).toContain('error fetching')
+            expect(res.body.error).toContain('something went wrong')
         })
         .end(function (err, res) {
             if (err) return done(err);
